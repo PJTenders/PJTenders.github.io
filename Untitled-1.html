@@ -1,0 +1,181 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .myDiv1 {
+        border: 1px none rgb(3, 3, 3);
+        background-color: black;
+    }
+    
+    .myDiv2 {
+        border: 1px none rgb(3, 3, 3);
+        background-color: rgb(102, 101, 101);
+    }
+    
+    .myDiv3 {
+        border: 1px none rgb(3, 3, 3);
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .mySuwat {
+        color: rgb(255, 255, 255);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: left;
+    }
+    
+    img {
+        width: 400px;
+        height: 400px;
+    }
+    
+    #navbar {
+        overflow: hidden;
+        background-color: #333;
+    }
+    
+    #navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    
+    #navbar a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    
+    #navbar a.active {
+        background-color: #04AA6D;
+        color: white;
+    }
+    
+    .content {
+        padding: 16px;
+    }
+    
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    
+    .sticky+.content {
+        padding-top: 60px;
+    }
+</style>
+
+
+<body>
+    <div class="myDiv1" id="navbar">
+        <table style="width:100%">
+            <tr>
+                <th>
+                    <h1 style="color: white; text-align: left;">Patrick Jay Malinao</h1>
+                </th>
+                <th>
+                    <a style=" color: white; " href="#home">Home</a>
+                </th>
+                <th>
+                    <a style=" color: white;" href="#portfolio">Portfolio</a>
+                </th>
+                <th>
+                    <a style="color: white;:" href="#moreinfo">More Info</a>
+                </th>
+            </tr>
+        </table>
+    </div>
+    <div style="text-align: center;" id="home">
+        <br>
+        <img src="asdf.png" alt="USPF Logo">
+        <h1>University of Southern Philippines Foundation</h1>
+        <br>
+        <br>
+        <p style="text-align: left; font-size: 25px;">
+            Name: Patrick Jay Malinao
+            <br> Course: BSIT
+            <br> Subject: IT414
+            <br> Time: Saturday 4:00pm to 8:30pm
+            <br> This website is for video compilation of IT414 purposes only.
+        </p>
+    </div>
+    <div class="myDiv2">
+        <table style="width:100%">
+            <tr>
+                <th>
+                    <h1 style="text-align: center; color: white;" id="portfolio">Portfolio</h1>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <table>
+                        <tr>
+                            <th>
+
+                                <div>
+                                    <iframe width="560 " height="315 " src="https://www.youtube.com/embed/Uw80mYocOK8 " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                                </div>
+                            </th>
+                        </tr>
+                    </table>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <table>
+                        <tr>
+                            <th>
+                                <div class=" frame ">
+                                    <iframe width="560 " height="315 " src="https://www.youtube.com/embed/3aZ9TNlLlmo " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                                </div>
+
+                            </th>
+                        </tr>
+                    </table>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <table>
+                        <tr>
+                            <th>
+                                <div>
+                                    <iframe width="560 " height="315 " src="https://www.youtube.com/embed/CDhhc8NAqo0 " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                                </div>
+                            </th>
+                        </tr>
+                    </table>
+                </th>
+            </tr>
+        </table>
+    </div>
+    <div class="myDiv3" style="background-image: url('4.png');" id="moreinfo">
+        <img src="asd.jpg" alt="Patrick Jay Malinao">
+        <p style="color: blanchedalmond; font-size: 20px;">
+            Patrick Jay Malinao
+            <br> A 2nd year student from USPF, Taking a course of BSIT.
+            <br> University of Southern Philippines
+            <br> Salinas Drive, Apas, Cebu City, Cebu 6000
+        </p>
+    </div>
+</body>
+<script>
+    window.onscroll = function() {
+        myFunction()
+    };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
+
+</html>
